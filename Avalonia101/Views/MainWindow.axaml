@@ -1,9 +1,9 @@
 <Window
     Background="Transparent"
+    Height="450"
     Icon="/Assets/avalonia-logo.ico"
     Title="Avalonia101"
-    d:DesignHeight="450"
-    d:DesignWidth="800"
+    Width="800"
     mc:Ignorable="d"
     x:Class="Avalonia101.Views.MainWindow"
     x:CompileBindings="True"
@@ -14,7 +14,8 @@
     xmlns:vm="using:Avalonia101.ViewModels"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-
+    <!--  d:DesignHeight="450"  -->
+    <!--  d:DesignWidth="800"  -->
     <!--  This is just used by the designer / previewer  -->
     <Design.DataContext>
         <vm:MainWindowViewModel />
@@ -24,12 +25,29 @@
 
     <TabControl>
         <TabItem Background="Red" Header="Data Validation">
-            <Grid />
+            <TabControl TabStripPlacement="Left">
+                <!--  Validation using DataAnnotations  -->
+                <TabItem FontSize="20" Header="DataAnnotations">
+                    <Grid Height="60" Width="500">
+                        <TextBox Text="{Binding ValidationUsingDataAnnotationViewModel.EMail}" />
+                    </Grid>
+                </TabItem>
+
+                <!--  Validation using INotifyDataErrorInfo  -->
+                <TabItem FontSize="20" Header="INotifyDataErrorInfo">
+                    <Grid Height="90" Width="500">
+                        <TextBox Text="{Binding ValidationUsingINotifyDataErrorInfoViewModel.EMail}" />
+                    </Grid>
+                </TabItem>
+
+
+
+            </TabControl>
         </TabItem>
 
         <TabItem Background="Yellow" Header="Sample ViewModel">
 
-            <StackPanel DataContext="{Binding BassicMvvmVm}" Spacing="10">
+            <StackPanel DataContext="{Binding BasicMvvmVm}" Spacing="10">
                 <TextBlock>Enter your Name:</TextBlock>
                 <TextBox Text="{Binding Name}" />
                 <TextBox

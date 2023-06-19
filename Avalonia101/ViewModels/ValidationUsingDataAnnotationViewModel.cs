@@ -13,7 +13,7 @@ public class ValidationUsingDataAnnotationViewModel : ViewModelBase
 {
     #region Properties
 
-    private string? _EMail;
+    private string? _eMail;
 
     /// <summary>
     /// Validation using DataAnnotation
@@ -22,15 +22,9 @@ public class ValidationUsingDataAnnotationViewModel : ViewModelBase
     [EmailAddress]
     public string? EMail
     {
-        get { return _EMail; }
-        set { this.RaiseAndSetIfChanged(ref _EMail, value); }
+        get { return _eMail; }
+        set { this.RaiseAndSetIfChanged(ref _eMail, value); }
     }
 
     #endregion
-
-
-    #region Constructors
-
-    #endregion
-
 }
