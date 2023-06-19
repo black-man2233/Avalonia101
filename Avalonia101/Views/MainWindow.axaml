@@ -4,6 +4,7 @@
     Icon="/Assets/avalonia-logo.ico"
     Title="Avalonia101"
     Width="800"
+    WindowStartupLocation="CenterOwner"
     mc:Ignorable="d"
     x:Class="Avalonia101.Views.MainWindow"
     x:CompileBindings="True"
@@ -14,37 +15,14 @@
     xmlns:vm="using:Avalonia101.ViewModels"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!--  d:DesignHeight="450"  -->
-    <!--  d:DesignWidth="800"  -->
     <!--  This is just used by the designer / previewer  -->
     <Design.DataContext>
         <vm:MainWindowViewModel />
     </Design.DataContext>
 
-    <!--  Our Simplie ViewModel  -->
-
     <TabControl>
-        <TabItem Background="Red" Header="Data Validation">
-            <TabControl TabStripPlacement="Left">
-                <!--  Validation using DataAnnotations  -->
-                <TabItem FontSize="20" Header="DataAnnotations">
-                    <Grid Height="60" Width="500">
-                        <TextBox Text="{Binding ValidationUsingDataAnnotationViewModel.EMail}" />
-                    </Grid>
-                </TabItem>
 
-                <!--  Validation using INotifyDataErrorInfo  -->
-                <TabItem FontSize="20" Header="INotifyDataErrorInfo">
-                    <Grid Height="90" Width="500">
-                        <TextBox Text="{Binding ValidationUsingINotifyDataErrorInfoViewModel.EMail}" />
-                    </Grid>
-                </TabItem>
-
-
-
-            </TabControl>
-        </TabItem>
-
+        <!--  Basic MVVM  -->
         <TabItem Background="Yellow" Header="Sample ViewModel">
 
             <StackPanel DataContext="{Binding BasicMvvmVm}" Spacing="10">
@@ -57,6 +35,7 @@
             </StackPanel>
         </TabItem>
 
+        <!--  CommandSample  -->
         <TabItem Background="Green" Header="Commands">
             <Grid
                 ColumnDefinitions="Auto, *"
@@ -141,6 +120,35 @@
             </Grid>
         </TabItem>
 
+        <!--  Data Validation  -->
+        <TabItem Background="Red" Header="Data Validation">
+            <TabControl TabStripPlacement="Left">
+                <!--  Validation using DataAnnotations  -->
+                <TabItem FontSize="20" Header="DataAnnotations">
+                    <Grid Height="320">
+                        <TextBox Text="{Binding ValidationUsingDataAnnotationViewModel.EMail}" VerticalAlignment="Center" />
+                    </Grid>
+                </TabItem>
+
+                <!--  Validation using INotifyDataErrorInfo  -->
+                <TabItem FontSize="20" Header="INotifyDataErrorInfo">
+                    <Grid Height="320">
+                        <TextBox Text="{Binding ValidationUsingINotifyDataErrorInfoViewModel.EMail}" VerticalAlignment="Center" />
+                    </Grid>
+                </TabItem>
+
+                <!--  Validation using Exceptions in setter  -->
+                <TabItem FontSize="20" Header="ExceptionInsideSetter">
+                    <Grid Height="320">
+                        <TextBox
+                            Text="{Binding ValidationUsingExceptionInsideSetterViewModel.EMail}"
+                            TextWrapping="Wrap"
+                            VerticalAlignment="Center" />
+                    </Grid>
+                </TabItem>
+
+            </TabControl>
+        </TabItem>
 
     </TabControl>
 

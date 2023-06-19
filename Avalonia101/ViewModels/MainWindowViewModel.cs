@@ -14,4 +14,10 @@ public class MainWindowViewModel : ViewModelBase
     public ValidationUsingINotifyDataErrorInfoViewModel ValidationUsingINotifyDataErrorInfoViewModel { get; }
         = new();
     
+    /// <summary>
+    /// Gets a ViewModel showing how to use Exceptions inside the setter for validation
+    /// </summary>
+    public ValidationUsingExceptionInsideSetterViewModel ValidationUsingExceptionInsideSetterViewModel { get; }
+        = new();
+    
 }
