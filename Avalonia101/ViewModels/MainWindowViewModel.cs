@@ -27,4 +27,6 @@ public class MainWindowViewModel : ViewModelBase
     #endregion
 
     public ValueConverterVM ValueConverterVM { get; } = new();
+    
+    // https://github.com/AvaloniaUI/Avalonia.Samples/tree/main/src/Avalonia.Samples/MVVM/ValidationSample
 }
