@@ -19,5 +19,7 @@ public class MainWindowViewModel : ViewModelBase
     /// </summary>
     public ValidationUsingExceptionInsideSetterViewModel ValidationUsingExceptionInsideSetterViewModel { get; }
         = new();
-    
+
+    public ValueConverterVM ValueConverterVM { get; }= new();
+
 }

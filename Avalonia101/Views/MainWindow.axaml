@@ -10,6 +10,7 @@
     x:CompileBindings="True"
     x:DataType="vm:MainWindowViewModel"
     xmlns="https://github.com/avaloniaui"
+    xmlns:conv="using:Avalonia101.Converter"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="using:Avalonia101.ViewModels"
@@ -23,7 +24,7 @@
     <TabControl>
 
         <!--  Basic MVVM  -->
-        <TabItem Background="Yellow" Header="Sample ViewModel">
+        <TabItem Background="Yellow" Header="Sample">
 
             <StackPanel DataContext="{Binding BasicMvvmVm}" Spacing="10">
                 <TextBlock>Enter your Name:</TextBlock>
@@ -148,6 +149,41 @@
                 </TabItem>
 
             </TabControl>
+        </TabItem>
+
+        <!--  Conversion  -->
+        <TabItem Background="Indigo" Header="ValueConversionSample">
+
+            <TabItem.Resources>
+                <!--  Add the MathAddConverter. Remember to add the needed namespace "conv"  -->
+                <conv:MathAddConverter x:Key="MathAddConverter" />
+                <!--  This Resource will be used as our ConverterParameter  -->
+                <x:Double x:Key="MyConverterParameter">2</x:Double>
+            </TabItem.Resources>
+
+            <Grid
+                ColumnDefinitions="Auto, *"
+                RowDefinitions="Auto, Auto"
+                VerticalAlignment="Center">
+                <TextBlock
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Text="Number 1" />
+                <NumericUpDown
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    Value="{Binding ValueConverterVM.Number1}" />
+
+                <TextBlock
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Text="Sum" />
+                <NumericUpDown
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Value="{Binding ValueConverterVM.Number1, Converter={StaticResource MathAddConverter}, ConverterParameter={StaticResource MyConverterParameter}}" />
+            </Grid>
+
         </TabItem>
 
     </TabControl>
