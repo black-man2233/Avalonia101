@@ -8,7 +8,7 @@ using ReactiveUI;
 
 namespace Avalonia101.ViewModels;
 
-public class SimpleViewModel : INotifyPropertyChanged
+public class BassicMvvmVM : INotifyPropertyChanged
 {
     #region Properties
 
@@ -60,7 +60,7 @@ public class SimpleViewModel : INotifyPropertyChanged
 
     private ICommand command { get; }
 
-    public SimpleViewModel()
+    public BassicMvvmVM()
     {
         // We can use the command to update the Name.
     }

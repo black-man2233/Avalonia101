@@ -23,11 +23,13 @@
     <!--  Our Simplie ViewModel  -->
 
     <TabControl>
-        <TabItem />
+        <TabItem Background="Red" Header="Data Validation">
+            <Grid />
+        </TabItem>
 
-        <TabItem Header="Sample ViewModel">
+        <TabItem Background="Yellow" Header="Sample ViewModel">
 
-            <StackPanel DataContext="{Binding SimpleViewModel}" Spacing="10">
+            <StackPanel DataContext="{Binding BassicMvvmVm}" Spacing="10">
                 <TextBlock>Enter your Name:</TextBlock>
                 <TextBox Text="{Binding Name}" />
                 <TextBox
@@ -37,7 +39,7 @@
             </StackPanel>
         </TabItem>
 
-        <TabItem Background="Transparent" Header="Commands">
+        <TabItem Background="Green" Header="Commands">
             <Grid
                 ColumnDefinitions="Auto, *"
                 DataContext="{Binding Commands}"

@@ -8,7 +8,7 @@ using ReactiveUI.Legacy;
 
 namespace Avalonia101.ViewModels;
 
-public class CommandsViewModel : IReactiveObject
+public class CommandsVM : IReactiveObject
 {
     #region Properties
 
@@ -67,7 +67,7 @@ public class CommandsViewModel : IReactiveObject
 
     #endregion
 
-    public CommandsViewModel()
+    public CommandsVM()
     {
         // Init OpenThePodBayDoorsDirectCommand
         OpenThePodBayDoorsDirectCommand = ReactiveCommand.Create(OpenThePodBayDoors);
