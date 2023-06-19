@@ -7,8 +7,8 @@ using ReactiveUI;
 using ReactiveUI.Legacy;
 
 namespace Avalonia101.ViewModels;
-
-public class CommandsVM : IReactiveObject
+#pragma warning disable
+public class CommandSample : ViewModelBase
 {
     #region Properties
 
@@ -67,7 +67,7 @@ public class CommandsVM : IReactiveObject
 
     #endregion
 
-    public CommandsVM()
+    public CommandSample()
     {
         // Init OpenThePodBayDoorsDirectCommand
         OpenThePodBayDoorsDirectCommand = ReactiveCommand.Create(OpenThePodBayDoors);
@@ -101,21 +101,4 @@ public class CommandsVM : IReactiveObject
 
         AddToConvo("Pod Bay is open to space!");
     }
-
-    #region PropertyChanged
-
-    public event PropertyChangedEventHandler? PropertyChanged;
-    public event PropertyChangingEventHandler? PropertyChanging;
-
-    public void RaisePropertyChanging(PropertyChangingEventArgs args)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void RaisePropertyChanged(PropertyChangedEventArgs args)
-    {
-        throw new NotImplementedException();
-    }
-
-    #endregion
 }

@@ -7,7 +7,7 @@ using System.Windows.Input;
 using ReactiveUI;
 
 namespace Avalonia101.ViewModels;
-
+#pragma warning disable
 public class BassicMvvmVM : INotifyPropertyChanged
 {
     #region Properties
