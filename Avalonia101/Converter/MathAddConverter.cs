@@ -4,6 +4,9 @@ using Avalonia.Data.Converters;
 
 namespace Avalonia101.Converter;
 
+/// <summary>
+/// This is a simple converter that adds a value to another value.
+/// </summary>
 public class MathAddConverter : IValueConverter
 {
     public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)

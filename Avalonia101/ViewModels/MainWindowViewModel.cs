@@ -2,6 +2,7 @@
 
 public class MainWindowViewModel : ViewModelBase
 {
+    // https://github.com/AvaloniaUI/Avalonia.Samples/tree/main/src/Avalonia.Samples/MVVM/ValidationSample
     // Add our SimpleViewModel.
     // Note: We need at least a get-accessor for our Properties.
 
@@ -26,7 +27,9 @@ public class MainWindowViewModel : ViewModelBase
 
     #endregion
 
+    #region Value conversion sample
+
     public ValueConverterVM ValueConverterVM { get; } = new();
-    
-    // https://github.com/AvaloniaUI/Avalonia.Samples/tree/main/src/Avalonia.Samples/MVVM/ValidationSample
+
+    #endregion
 }
