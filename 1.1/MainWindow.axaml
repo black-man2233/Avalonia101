@@ -6,10 +6,5 @@
         WindowStartupLocation="CenterOwner"
         x:Class="_1._1.MainWindow"
         Title="_1._1">
-    <!-- Ikke tænk på <Grid /> -->
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-
-        <TextBlock FontWeight="Bold" FontStyle="Italic"> Assembly er det bedste</TextBlock>
-
-    </Grid>
+  
 </Window>
