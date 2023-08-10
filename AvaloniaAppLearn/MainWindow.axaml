@@ -18,7 +18,6 @@
                     <StackPanel Spacing="1">
                         <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
 
-                            <TextBlock FontWeight="Bold" FontStyle="Italic"> Assembly er det bedste</TextBlock>
                         </Grid>
                     </StackPanel>
                 </TabItem>  
@@ -28,7 +27,6 @@
                     <StackPanel Spacing="10">
                         <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
 
-                            <TextBlock FontWeight="Bold" FontStyle="Italic"> Assembly er det bedste</TextBlock>
                         </Grid>
                     </StackPanel>
                 </TabItem>

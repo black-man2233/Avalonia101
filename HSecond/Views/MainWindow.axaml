@@ -3,6 +3,7 @@
         xmlns:vm="using:HSecond.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:uc="clr-namespace:HSecond.Views.UserControls"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="HSecond.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
@@ -17,31 +18,41 @@
 
     <TabControl>
 
-        <!--  Data Validation  -->
-        <TabItem Background="Red" Header="Data Validation">
+        <!--  1  -->
+        <TabItem Background="Red" Header="1">
             <TabControl TabStripPlacement="Left">
-                <!--  Validation using DataAnnotations  -->
-                <TabItem FontSize="20" Header="DataAnnotations">
-                    <Grid Height="320">
-                        <TextBox Text="EMail" VerticalAlignment="Center" />
+                <!--  1.1  -->
+                <TabItem FontSize="20" Header="1.1">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock FontWeight="Bold" FontStyle="Italic"> Assembly er det bedste</TextBlock>
+
                     </Grid>
                 </TabItem>
-                
-                <!--  Validation using Exceptions in setter  -->
-                <TabItem FontSize="20" Header="ExceptionInsideSetter">
+                <!--  1.2  -->
+                <TabItem FontSize="20" Header="1.2">
                     <Grid Height="320">
-                        <TextBox
-                            Text="EMail"
-                            TextWrapping="Wrap"
-                            VerticalAlignment="Center" />
+                        <TextBlock FontWeight="Bold" FontStyle="Italic"> Assembly er det bedste</TextBlock>
+
                     </Grid>
                 </TabItem>
 
             </TabControl>
         </TabItem>
-        
-        
-        
-        
+
+        <!--  2  -->
+        <TabItem Background="Green" Header="2">
+            <TabControl TabStripPlacement="Left">
+                <!--  User Controls -->
+                <TabItem FontSize="20" Header="User Controls">
+                    <StackPanel>
+                        <uc:CalenUC/>
+                    </StackPanel>
+                </TabItem>
+
+                
+            </TabControl>
+        </TabItem>
+
+
     </TabControl>
 </Window>
