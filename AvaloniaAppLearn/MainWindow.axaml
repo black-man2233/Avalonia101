@@ -5,11 +5,34 @@
         mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="450"
         x:Class="AvaloniaAppLearn.MainWindow"
         WindowStartupLocation="CenterOwner"
+        xmlns:uc="clr-namespace:AvaloniaAppLearn.UserControls"
         Title="AvaloniaAppLearn">
     <!-- Ikke tænk på <Grid /> -->
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
 
-        <TextBlock FontWeight="Bold" FontStyle="Italic"> Assembly er det bedste</TextBlock>
-        <ListBox />
-    </Grid>
+    <TabControl>
+        <!--  Basic MVVM  -->
+        <TabItem Background="Yellow" Header="Opg 1">
+            <TabControl TabStripPlacement="Right">
+                <!-- 1.1 -->
+                <TabItem Background="Yellow" Header="1.1" TabStripPlacement="Right">
+                    <StackPanel Spacing="1">
+                        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                            <TextBlock FontWeight="Bold" FontStyle="Italic"> Assembly er det bedste</TextBlock>
+                        </Grid>
+                    </StackPanel>
+                </TabItem>  
+                
+                <!-- 1.1 -->
+                <TabItem Background="Yellow" Header="1.1">
+                    <StackPanel Spacing="10">
+                        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                            <TextBlock FontWeight="Bold" FontStyle="Italic"> Assembly er det bedste</TextBlock>
+                        </Grid>
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+        </TabItem>
+    </TabControl>
 </Window>
