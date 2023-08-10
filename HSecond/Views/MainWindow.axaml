@@ -95,20 +95,17 @@
 
                     </StackPanel>
                 </TabItem>
-                
-                
+
+
                 <!--  2.4 -->
                 <TabItem FontSize="20" Header="Hjemmelavede knap">
                     <Border BorderBrush="Aqua" BorderThickness="30">
-                        
-                    <uc:HomeMadeButtonUC MouseClick="HomeName_OnMouseClick" Name="HomeName"/>
-                    
+                        <uc:HomeMadeButtonUC MouseClick="HomeName_OnMouseClick" Name="HomeName" />
                     </Border>
                 </TabItem>
                 
-                
             </TabControl>
         </TabItem>
-        
+
     </TabControl>
 </Window>

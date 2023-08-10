@@ -5,14 +5,13 @@ using Avalonia.Interactivity;
 using Avalonia.Layout;
 using Avalonia.Media.Imaging;
 
-
 namespace HSecond.Views.UserControls;
 
 // Defining a custom UserControl class named HomeMadeButtonUC.
 public partial class HomeMadeButtonUC : UserControl
 {
     // Defining an event delegate for MouseClick events.
-    public event MouseClickEventHandler MouseClick;
+    public event MouseClickEventHandler? MouseClick;
 
     // Constructor for the HomeMadeButtonUC class.
     public HomeMadeButtonUC()
@@ -25,7 +24,7 @@ public partial class HomeMadeButtonUC : UserControl
     }
 
     // Event handler for the PointerReleased event.
-    void OnPointerReleased(object sender, PointerReleasedEventArgs args)
+    void OnPointerReleased(object? sender, PointerReleasedEventArgs args)
     {
         // Create an instance of the MouseClickEventArgs class.
         MouseClickEventArgs mouseClickArgs = new();
