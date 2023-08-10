@@ -90,15 +90,25 @@
                         <!-- Calender the 5th -->
 
                         <Calendar Name="Ccalender" SelectedDatesChanged="SDateChange" />
-                        
-                        <TextBox TextChanged="SizeUp" />
-                        
-                    </StackPanel>
 
+                        <TextBox TextChanged="SizeUp" />
+
+                    </StackPanel>
                 </TabItem>
+                
+                
+                <!--  2.4 -->
+                <TabItem FontSize="20" Header="Hjemmelavede knap">
+                    <Border BorderBrush="Aqua" BorderThickness="30">
+                        
+                    <uc:HomeMadeButtonUC MouseClick="HomeName_OnMouseClick" Name="HomeName"/>
+                    
+                    </Border>
+                </TabItem>
+                
+                
             </TabControl>
         </TabItem>
-
-
+        
     </TabControl>
 </Window>

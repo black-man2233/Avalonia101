@@ -1,0 +1,23 @@
+﻿<!-- Define the UserControl with namespaces and class information -->
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="350"
+             x:Class="HSecond.Views.UserControls.HomeMadeButtonUC">
+
+    <!-- Define a StackPanel to hold the contents of the UserControl -->
+    <StackPanel Name="Panel" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical">
+        
+        <!-- Add a TextBox with initial text and font size -->
+        <TextBox Name="txtman" Text="Simon er den Bedste efter Frank" FontSize="30" />
+        
+        <!-- Add an Ellipse shape with specified height and width -->
+        <Ellipse Height="300" Width="400">
+            <Ellipse.Fill>
+                <!-- Fill the Ellipse with an ImageBrush using an image from the specified source -->
+                <ImageBrush Source="/Assets/LemmeThink.jpg" />
+            </Ellipse.Fill>
+        </Ellipse>
+    </StackPanel>
+</UserControl>
