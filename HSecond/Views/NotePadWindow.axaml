@@ -4,6 +4,90 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="HSecond.Views.NotePadWindow"
-        Title="NotePadWindow">
-  
+        Title="Unavngivet - Notesblok"
+        Icon="">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+
+        <!-- Navigation Panel -->
+        <Border BorderBrush="#F0F0F0" BorderThickness="0,0,0,1"></Border>
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" Height="10" MinHeight="30">
+
+            <!-- Filer -->
+            <Button Content="Filer" FontSize="11" Height="30" HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    Foreground="Black"
+                    Background="Transparent">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Width="200">
+                            <Button Background="Transparent" Content="Ny fane" Width="200" />
+                            <Button Background="Transparent" Content="Nyt vindue" Width="200" />
+                            <Button Background="Transparent" Content="Åbn" Width="200" />
+                            <Button Background="Transparent" Content="Gem" Width="200" />
+                            <Button Background="Transparent" Content="Gem som" Width="200" />
+                            <Button Background="Transparent" Content="Gem alle" Width="200" />
+                            <Button Background="Transparent" Content="Sideopsætning" Width="200" />
+                            <Button Background="Transparent" Content="Udskriv" Width="200" />
+                            <Button Background="Transparent" Content="Luk fane" Width="200" />
+                            <Button Background="Transparent" Content="Luk vindue" Width="200" />
+                            <Button Background="Transparent" Content="Afslut" Width="200" />
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
+
+            <!-- Rediger -->
+            <Button Content="Rediger" FontSize="11" Height="30" HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    Foreground="Black"
+                    Background="Transparent">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Width="200">
+                            <Button Content="Fortryd" Width="200" Background="Transparent" />
+                            <Button Content="Klip" Background="Transparent" Width="200" />
+                            <Button Content="Kopiér" Background="Transparent" Width="200" />
+                            <Button Content="Sæt ind" Background="Transparent" Width="200" />
+                            <Button Content="Slet" Background="Transparent" Width="200" />
+                            <Button Content="Find" Background="Transparent" Width="200" />
+                            <Button Content="Find næste" Background="Transparent" Width="200" />
+                            <Button Content="Find forrige" Background="Transparent" Width="200" />
+                            <Button Content="Erstat" Background="Transparent" Width="200" />
+                            <Button Content="Gå til" Background="Transparent" Width="200" />
+                            <Button Content="Markér alle" Background="Transparent" Width="200" />
+                            <Button Content="Tid/Dato" Background="Transparent" Width="200" />
+                            <Button Content="Skrifttype" Background="Transparent" Width="200" />
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
+        </StackPanel>
+
+        <!-- Tekst plads -->
+        <TextBox FontSize="12" Grid.Row="1" Grid.Column="0" BorderBrush="Transparent">Mathias Elser </TextBox>
+
+
+        <!-- Info Panel -->
+        <Grid Grid.Row="2" Grid.Column="1" Background="#F0F0F0" Height="20"
+                          VerticalAlignment="Bottom">
+
+            <StackPanel  Orientation="Horizontal" HorizontalAlignment="Right" >
+                <TextBlock FontSize="12" Text="|Linje 1, Kol. 1"/>
+                <TextBlock Text="     "/>
+                <TextBlock FontSize="12" Text="|100%" />
+                <TextBlock Text="     "/>
+                <TextBlock FontSize="12" Text="|Windows (CRLF)" />
+                <TextBlock Text="     "/>
+                <TextBlock FontSize="12" Text="|UTF-8" />
+                <TextBlock Text="     "/>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
 </Window>

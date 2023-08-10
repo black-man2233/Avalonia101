@@ -1,6 +1,7 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Input;
+using Avalonia.Interactivity;
 using Avalonia.Layout;
 using HSecond.Views.UserControls;
 using Microsoft.VisualBasic;
@@ -107,6 +108,12 @@ namespace HSecond.Views
         {
             // Update the window title with a specific message.
             this.Title = @"Simon is the Winner """"Maybe""";
+        }
+
+        private void Button_OnClick(object? sender, RoutedEventArgs e)
+        {
+            NotePadWindow notepad = new();
+            notepad.Show();
         }
     }
 }
