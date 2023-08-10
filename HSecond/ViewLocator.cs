@@ -5,6 +5,7 @@ using HSecond.ViewModels;
 
 namespace HSecond;
 
+#pragma warning disable
 public class ViewLocator : IDataTemplate
 {
     public Control Build(object data)
