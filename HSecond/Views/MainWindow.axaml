@@ -6,6 +6,7 @@
         xmlns:uc="clr-namespace:HSecond.Views.UserControls"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="HSecond.Views.MainWindow"
+        WindowStartupLocation="CenterOwner"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
         Title="HSecond">
@@ -48,8 +49,13 @@
                         <uc:CalenUC/>
                     </StackPanel>
                 </TabItem>
-
                 
+                <!--  2.3 -->
+                <TabItem FontSize="20" Header="2.3">
+                    <StackPanel>
+                        <uc:MockUpUC/>
+                    </StackPanel>
+                </TabItem>
             </TabControl>
         </TabItem>
 
