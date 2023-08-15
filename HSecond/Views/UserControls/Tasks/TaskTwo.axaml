@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              xmlns:uc="clr-namespace:HSecond.Views.UserControls"
-             x:Class="HSecond.Views.UserControls.TaskTwo">
+             x:Class="HSecond.Views.UserControls.Tasks.TaskTwo">
      <TabControl TabStripPlacement="Left">
                 <!--  User Controls -->
                 <TabItem FontSize="20" Header="User Controls">

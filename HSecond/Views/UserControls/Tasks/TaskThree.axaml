@@ -1,0 +1,22 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:uc="clr-namespace:HSecond.Views.UserControls"
+
+             x:Class="HSecond.Views.UserControls.Tasks.TaskThree">
+    <TabControl TabStripPlacement="Left">
+        <!--  3.1 -->
+        <TabItem FontSize="20" Header="3.2">
+                <Button Click="Button_OnClick" Height="200" Width="200"> Click here to Open </Button>
+        </TabItem>
+
+        <!--  3.3 -->
+        <TabItem FontSize="20" Header="2.3">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <uc:LoginFormView />
+            </StackPanel>
+        </TabItem>
+    </TabControl>
+</UserControl>

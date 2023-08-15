@@ -1,11 +1,9 @@
 ﻿using System;
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Interactivity;
 using Avalonia.Layout;
-using Avalonia.Markup.Xaml;
 
-namespace HSecond.Views.UserControls;
+#pragma warning disable
+namespace HSecond.Views.UserControls.Tasks;
 
 public partial class TaskTwo : UserControl
 {
@@ -42,7 +40,7 @@ public partial class TaskTwo : UserControl
             try
             {
                 // Update font size based on entered text and show a specific element.
-                tb.FontSize = int.Parse(tb.Text) * 10;
+                if (tb.Text != null) tb.FontSize = int.Parse(tb.Text) * 10;
                 Ccalender.IsVisible = true;
             }
             catch (Exception exception)
@@ -58,7 +56,7 @@ public partial class TaskTwo : UserControl
     {
         if (sender is ComboBox cb)
         {
-            ComboBoxItem item = (ComboBoxItem)cb.SelectedItem;
+            ComboBoxItem? item = (ComboBoxItem)cb.SelectedItem!;
 
             // Calculate and display currency based on selected item.
             switch (item.Content)
@@ -82,7 +80,7 @@ public partial class TaskTwo : UserControl
         if (sender is ComboBox cb)
         {
             // Update window title with the selected word.
-            string selectedWord = ((ComboBoxItem)cb.SelectedItem).Content.ToString();
+            string selectedWord = ((ComboBoxItem)cb.SelectedItem).Content?.ToString();
             // this.Title = selectedWord;
         }
     }

@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:uc="clr-namespace:HSecond.Views.UserControls"
+        xmlns:tasks="clr-namespace:HSecond.Views.UserControls.Tasks"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="HSecond.Views.MainWindow"
         WindowStartupLocation="CenterOwner"
@@ -19,12 +20,7 @@
 
 
     <TabControl>
-
-        <!--  3  -->
-        <TabItem Background="Red" Header="NotePad">
-            <Button Click="Button_OnClick" Height="200" Width="200"> Click here to Open </Button>
-        </TabItem>
-
+      
         <!--  1  -->
         <TabItem Background="Red" Header="1">
            <uc:TaskOne/>
@@ -32,8 +28,14 @@
 
         <!--  2  -->
         <TabItem Background="Green" Header="2">
-           <uc:TaskTwo></uc:TaskTwo>
+           <tasks:TaskTwo></tasks:TaskTwo>
         </TabItem>
+        
+        <!--  3  -->
+        <TabItem Background="Red" Header="3">
+            <tasks:TaskThree/>
+        </TabItem>
+        
 
     </TabControl>
 
