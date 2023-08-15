@@ -27,4 +27,16 @@
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
     </ItemGroup>
+
+
+    <ItemGroup>
+      <Compile Update="Views\UserControls\Tasks\TaskOne.axaml.cs">
+        <DependentUpon>TaskOne.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\UserControls\Tasks\TaskTwo.axaml.cs">
+        <DependentUpon>TaskTwo.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
 </Project>
