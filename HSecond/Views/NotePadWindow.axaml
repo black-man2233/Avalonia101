@@ -3,9 +3,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="HSecond.Views.NotePadWindow"
-        Title="Unavngivet - Notesblok"
-        Icon="">
+        x:Class="HSecond.Views.NotePadWindow">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -75,17 +73,17 @@
 
         <!-- Info Panel -->
         <Grid Grid.Row="2" Grid.Column="1" Background="#F0F0F0" Height="20"
-                          VerticalAlignment="Bottom">
+              VerticalAlignment="Bottom">
 
-            <StackPanel  Orientation="Horizontal" HorizontalAlignment="Right" >
-                <TextBlock FontSize="12" Text="|Linje 1, Kol. 1"/>
-                <TextBlock Text="     "/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock FontSize="12" Text="|Linje 1, Kol. 1" />
+                <TextBlock Text="     " />
                 <TextBlock FontSize="12" Text="|100%" />
-                <TextBlock Text="     "/>
+                <TextBlock Text="     " />
                 <TextBlock FontSize="12" Text="|Windows (CRLF)" />
-                <TextBlock Text="     "/>
+                <TextBlock Text="     " />
                 <TextBlock FontSize="12" Text="|UTF-8" />
-                <TextBlock Text="     "/>
+                <TextBlock Text="     " />
             </StackPanel>
         </Grid>
 

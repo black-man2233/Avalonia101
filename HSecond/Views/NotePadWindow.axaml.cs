@@ -9,5 +9,11 @@ public partial class NotePadWindow : Window
     public NotePadWindow()
     {
         InitializeComponent();
+        WindowName();
+    }
+
+    private void WindowName()
+    {
+        this.Title = "Unavngivet - Notesblok";
     }
 }
