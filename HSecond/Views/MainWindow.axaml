@@ -21,6 +21,13 @@
 
     <TabControl>
       
+        
+            
+        <!--  4  -->
+        <TabItem Background="Red" Header="4">
+            <tasks:TaskFour/>
+        </TabItem>
+        
         <!--  1  -->
         <TabItem Background="Red" Header="1">
            <uc:TaskOne/>
