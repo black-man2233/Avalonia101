@@ -1,0 +1,70 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:uc="clr-namespace:HSecond.Views.UserControls"
+             x:Class="HSecond.Views.UserControls.TaskTwo">
+     <TabControl TabStripPlacement="Left">
+                <!--  User Controls -->
+                <TabItem FontSize="20" Header="User Controls">
+                    <StackPanel>
+                        <uc:CalenUC />
+                    </StackPanel>
+                </TabItem>
+
+                <!--  2.3 -->
+                <TabItem FontSize="20" Header="2.3">
+                    <StackPanel>
+                        <uc:MockUpUC />
+                    </StackPanel>
+                </TabItem>
+
+                <!--  WrapPnale -->
+                <TabItem FontSize="20" Header="Wrap Panel">
+                    <StackPanel>
+                        <WrapPanel>
+                            <Label Content="Vælg Valua" />
+                            <ComboBox SelectionChanged="CbSectionChanged">
+                                <ComboBoxItem Content="DKK" />
+                                <ComboBoxItem Content="EUR" />
+                                <ComboBoxItem Content="USD" />
+                            </ComboBox>
+                            <TextBox Name="Currency" />
+                        </WrapPanel>
+                    </StackPanel>
+                </TabItem>
+
+                <!--  2.4 -->
+                <TabItem FontSize="20" Header="2.4">
+                    <StackPanel>
+                        <!-- Selecte Window Title -->
+                        <WrapPanel>
+                            <Label Content="Vælg Navn" />
+                            <ComboBox SelectionChanged="ChangeWindowName">
+                                <ComboBoxItem Content="Mathias" />
+                                <ComboBoxItem Content="Simon" />
+                                <ComboBoxItem Content="Avalonia" />
+                                <ComboBoxItem Content="Assembly" />
+                            </ComboBox>
+                        </WrapPanel>
+
+                        <!-- Calender the 5th -->
+
+                        <Calendar Name="Ccalender" SelectedDatesChanged="SDateChange" />
+
+                        <TextBox TextChanged="SizeUp" />
+
+                    </StackPanel>
+                </TabItem>
+
+
+                <!--  2.4 -->
+                <TabItem FontSize="20" Header="Hjemmelavede knap">
+                    <Border BorderBrush="Aqua" BorderThickness="30">
+                        <uc:HomeMadeButtonUC MouseClick="HomeName_OnMouseClick" Name="HomeName" />
+                    </Border>
+                </TabItem>
+
+            </TabControl>
+</UserControl>

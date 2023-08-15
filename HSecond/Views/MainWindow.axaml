@@ -8,109 +8,33 @@
         x:Class="HSecond.Views.MainWindow"
         WindowStartupLocation="CenterOwner"
         x:DataType="vm:MainWindowViewModel"
-        Icon="/Assets/avalonia-logo.ico"
-        Title="HSecond"
-        x:Name="ThisWindow">
+        Title="HSecond">
 
-    <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:MainWindowViewModel />
-    </Design.DataContext>
+        <!-- Icon="/Assets/avalonia-logo.ico" -->
+    <!-- <Design.DataContext> -->
+    <!--  This only sets the DataContext for the previewer in an IDE, -->
+    <!--          to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+    <!--     <vm:MainWindowViewModel /> -->
+    <!-- </Design.DataContext> -->
+
 
     <TabControl>
 
-        <!--  1  -->
-        <TabItem Background="Red" Header="1">
-            <Button Click="Button_OnClick" Height="200" Width="200"></Button>
+        <!--  3  -->
+        <TabItem Background="Red" Header="NotePad">
+            <Button Click="Button_OnClick" Height="200" Width="200"> Click here to Open </Button>
         </TabItem>
 
         <!--  1  -->
         <TabItem Background="Red" Header="1">
-            <TabControl TabStripPlacement="Left">
-                <!--  1.1  -->
-                <TabItem FontSize="20" Header="1.1">
-                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <TextBlock FontWeight="Bold" FontStyle="Italic"> Assembly er det bedste</TextBlock>
-
-                    </Grid>
-                </TabItem>
-                <!--  1.2  -->
-                <TabItem FontSize="20" Header="1.2">
-                    <Grid Height="320">
-                        <TextBlock FontWeight="Bold" FontStyle="Italic"> Assembly er det bedste</TextBlock>
-
-                    </Grid>
-                </TabItem>
-
-            </TabControl>
+           <uc:TaskOne/>
         </TabItem>
 
         <!--  2  -->
         <TabItem Background="Green" Header="2">
-            <TabControl TabStripPlacement="Left">
-                <!--  User Controls -->
-                <TabItem FontSize="20" Header="User Controls">
-                    <StackPanel>
-                        <uc:CalenUC />
-                    </StackPanel>
-                </TabItem>
-
-                <!--  2.3 -->
-                <TabItem FontSize="20" Header="2.3">
-                    <StackPanel>
-                        <uc:MockUpUC />
-                    </StackPanel>
-                </TabItem>
-
-                <!--  WrapPnale -->
-                <TabItem FontSize="20" Header="Wrap Panel">
-                    <StackPanel>
-                        <WrapPanel>
-                            <Label Content="Vælg Valua" />
-                            <ComboBox SelectionChanged="CbSectionChanged">
-                                <ComboBoxItem Content="DKK" />
-                                <ComboBoxItem Content="EUR" />
-                                <ComboBoxItem Content="USD" />
-                            </ComboBox>
-                            <TextBox Name="Currency" />
-                        </WrapPanel>
-                    </StackPanel>
-                </TabItem>
-
-                <!--  2.4 -->
-                <TabItem FontSize="20" Header="2.4">
-                    <StackPanel>
-                        <!-- Selecte Window Title -->
-                        <WrapPanel>
-                            <Label Content="Vælg Navn" />
-                            <ComboBox SelectionChanged="ChangeWindowName">
-                                <ComboBoxItem Content="Mathias" />
-                                <ComboBoxItem Content="Simon" />
-                                <ComboBoxItem Content="Avalonia" />
-                                <ComboBoxItem Content="Assembly" />
-                            </ComboBox>
-                        </WrapPanel>
-
-                        <!-- Calender the 5th -->
-
-                        <Calendar Name="Ccalender" SelectedDatesChanged="SDateChange" />
-
-                        <TextBox TextChanged="SizeUp" />
-
-                    </StackPanel>
-                </TabItem>
-
-
-                <!--  2.4 -->
-                <TabItem FontSize="20" Header="Hjemmelavede knap">
-                    <Border BorderBrush="Aqua" BorderThickness="30">
-                        <uc:HomeMadeButtonUC MouseClick="HomeName_OnMouseClick" Name="HomeName" />
-                    </Border>
-                </TabItem>
-
-            </TabControl>
+           <uc:TaskTwo></uc:TaskTwo>
         </TabItem>
 
     </TabControl>
+
 </Window>
