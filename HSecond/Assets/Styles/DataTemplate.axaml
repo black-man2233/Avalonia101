@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vm="clr-namespace:HSecond.ViewModels"
+                    xmlns:uc="clr-namespace:HSecond.Views.UserControls.Produktering">
+    <DataTemplate DataType="{x:Type vm:ProductInfoVM}">
+        <uc:ProductInfoView />
+    </DataTemplate>
+</ResourceDictionary>
