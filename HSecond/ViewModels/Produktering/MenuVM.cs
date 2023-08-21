@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Reactive;
-using System.Reactive.Linq;
 using HSecond.Models;
 using ReactiveUI;
 
-namespace HSecond.ViewModels;
+namespace HSecond.ViewModels.Produktering;
 
 public class MenuVM : ViewModelBase
 {

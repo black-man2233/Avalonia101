@@ -1,6 +1,6 @@
 ﻿using HSecond.Models;
 
-namespace HSecond.ViewModels;
+namespace HSecond.ViewModels.Produktering;
 
 public class ProductInfoVM : ViewModelBase
 {

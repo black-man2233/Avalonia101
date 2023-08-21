@@ -1,14 +1,14 @@
 ﻿using System.Reactive;
-using Avalonia.Controls;
 using HSecond.Models;
 using ReactiveUI;
 
-namespace HSecond.ViewModels;
+namespace HSecond.ViewModels.Produktering;
 
 public class ProdukteringVM : ViewModelBase
 {
     public ProdukteringVM()
     {
+        _currentView = new(); 
         ItemClickedCommand = ReactiveCommand.Create<object>(ShowItemInfo);
     }
 

@@ -38,4 +38,9 @@
         <SubType>Code</SubType>
       </Compile>
     </ItemGroup>
+
+
+    <ItemGroup>
+      <Folder Include="Assets\Styles\" />
+    </ItemGroup>
 </Project>
