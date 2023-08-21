@@ -10,18 +10,7 @@
     <Application.DataTemplates>
         <local:ViewLocator />
     </Application.DataTemplates>
-
-    <!-- <Application.Resources> -->
-    <!--     <DataTemplate x:DataType="{x:Type produktering:ProductInfoVM}"> -->
-    <!--         <uc:ProductInfoView /> -->
-    <!--     </DataTemplate> -->
-    <!-- -->
-    <!--     <DataTemplate x:DataType="{x:Type produktering:MenuVM}"> -->
-    <!--         <uc:MenuView /> -->
-    <!--     </DataTemplate> -->
-    <!-- </Application.Resources> -->
-
-
+    
     <Application.Styles>
         <FluentTheme />
     </Application.Styles>
