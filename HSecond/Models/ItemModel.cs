@@ -27,6 +27,9 @@ public class ItemModel : ICloneable
     public ItemModel(string varenummer)
     {
         Varenummer = varenummer;
+        Produktnavn = "";
+        Produktbeskrivelse = "";
+        Hidden = true;
         CampaignEnd = DateTime.Now;
     }
 
