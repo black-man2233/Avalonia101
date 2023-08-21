@@ -12,6 +12,7 @@ public class MenuVM : ViewModelBase
     {
         _menuList = new();
         ItemClickedCommand = ReactiveCommand.Create<object>(ShowItemInfo);
+        tmpData();
     }
 
     #region Properties
@@ -50,4 +51,11 @@ public class MenuVM : ViewModelBase
     private ObservableCollection<ItemModel> _menuList { get; set; }
 
     #endregion
+
+    private void tmpData()
+    {
+        for (int i = 0; i < 10; i++)
+            _menuList.Add(new ItemModel($"{i}", $"navn{i}", $"produktbeskrivelse {i}", (decimal)100 * i,
+                (decimal)100 * 2, (float)3 * i, ProduktEnhed.cm, false, null));
+    }
 }

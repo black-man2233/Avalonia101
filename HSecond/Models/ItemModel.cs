@@ -6,7 +6,7 @@ public class ItemModel : ICloneable
 {
     #region Constructors
 
-    private ItemModel(string varenummer, string produktnavn, string produktbeskrivelse, decimal salgspris,
+    public ItemModel(string varenummer, string produktnavn, string produktbeskrivelse, decimal salgspris,
         decimal indkøbspris, float lagerantal, ProduktEnhed produktenhed, bool hidden, DateTime? campaignEnd)
     {
         Varenummer = varenummer;
