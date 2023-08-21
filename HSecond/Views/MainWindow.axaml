@@ -11,7 +11,7 @@
         x:DataType="vm:MainWindowViewModel"
         Title="HSecond">
 
-        <!-- Icon="/Assets/avalonia-logo.ico" -->
+    <!-- Icon="/Assets/avalonia-logo.ico" -->
     <!-- <Design.DataContext> -->
     <!--  This only sets the DataContext for the previewer in an IDE, -->
     <!--          to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
@@ -20,29 +20,26 @@
 
 
     <TabControl>
-      
-        
-            
         <!--  4  -->
         <TabItem Background="Red" Header="4">
-            <tasks:TaskFour/>
+            <tasks:TaskFour />
         </TabItem>
-        
+
         <!--  1  -->
         <TabItem Background="Red" Header="1">
-           <uc:TaskOne/>
+            <uc:TaskOne />
         </TabItem>
 
         <!--  2  -->
         <TabItem Background="Green" Header="2">
-           <tasks:TaskTwo></tasks:TaskTwo>
+            <tasks:TaskTwo></tasks:TaskTwo>
         </TabItem>
-        
+
         <!--  3  -->
         <TabItem Background="Red" Header="3">
-            <tasks:TaskThree/>
+            <tasks:TaskThree />
         </TabItem>
-        
+
 
     </TabControl>
 
