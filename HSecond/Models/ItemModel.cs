@@ -2,14 +2,7 @@
 
 namespace HSecond.Models;
 
-public enum ProduktEnhed
-{
-    stk,
-    cm,
-    kg
-}
-
-public class ItemModel
+public class ItemModel : ICloneable
 {
     #region Constructors
 
@@ -52,4 +45,11 @@ public class ItemModel
     public DateTime CampaignEnd { get; set; }
 
     #endregion
+
+    public object Clone()
+    {
+        return new ItemModel(varenummer: Varenummer, produktnavn: Produktnavn, produktbeskrivelse: Produktbeskrivelse,
+            salgspris: Salgspris, indkøbspris: Indkøbspris, lagerantal: Lagerantal, produktenhed: Produktenhed,
+            hidden: Hidden, campaignEnd: CampaignEnd);
+    }
 }
