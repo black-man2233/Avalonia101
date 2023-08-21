@@ -1,8 +1,6 @@
-﻿using Avalonia;
-using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
+﻿using Avalonia.Controls;
 
-namespace HSecond.Views.UserControls;
+namespace HSecond.Views.UserControls.Produktering;
 
 public partial class ProdukteringView : UserControl
 {

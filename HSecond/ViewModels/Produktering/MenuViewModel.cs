@@ -6,9 +6,9 @@ using ReactiveUI;
 
 namespace HSecond.ViewModels.Produktering;
 
-public class MenuVM : ViewModelBase
+public class MenuViewModel : ViewModelBase
 {
-    public MenuVM()
+    public MenuViewModel()
     {
         _menuList = new();
         ItemClickedCommand = ReactiveCommand.Create<object>(ShowItemInfo);

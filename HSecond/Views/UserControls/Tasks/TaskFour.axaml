@@ -4,13 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              xmlns:uc="clr-namespace:HSecond.Views.UserControls"
+             xmlns:produktering="clr-namespace:HSecond.Views.UserControls.Produktering"
              x:Class="HSecond.Views.UserControls.Tasks.TaskFour">
     
     <TabControl TabStripPlacement="Left">
         <!--  4.2  -->
         <TabItem FontSize="20" Header="Produktering">
             <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-                <uc:ProdukteringView/>
+                <produktering:ProdukteringView/>
             </Grid>
         </TabItem>
        

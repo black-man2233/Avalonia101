@@ -5,36 +5,11 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="HSecond.Views.UserControls.Produktering.ProductInfoView"
              xmlns:vm="clr-namespace:HSecond.ViewModels.Produktering"
-             Background="#0A192F">
+             x:DataType="vm:ProductInfoViewModel">
 
-    <UserControl.DataContext>
-        <vm:ProdukteringVM />
-    </UserControl.DataContext>
+    <!-- <UserControl.DataContext> -->
+    <!--     <vm:ProductInfoVM /> -->
+    <!-- </UserControl.DataContext> -->
 
-    <Grid>
-
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-
-        <ListBox Height="50" Width="50">
-
-
-        </ListBox>
-
-        <Grid Grid.Column="1" Margin="20,0,0,0">
-
-            <Grid.RowDefinitions>
-                <RowDefinition Height="55" />
-                <RowDefinition Height="500" />
-            </Grid.RowDefinitions>
-
-
-            <ContentControl Content="{Binding CurrentView}" Grid.Row="1" />
-
-        </Grid>
-
-
-    </Grid>
+  
 </UserControl>

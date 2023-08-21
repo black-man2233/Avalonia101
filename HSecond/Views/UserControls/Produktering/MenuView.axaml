@@ -5,11 +5,11 @@
              mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="400"
              x:Class="HSecond.Views.UserControls.Produktering.MenuView"
              xmlns:vm="clr-namespace:HSecond.ViewModels.Produktering"
-             x:DataType="vm:MenuVM"
+             x:DataType="vm:MenuViewModel"
              Background="#172A46">
 
     <UserControl.DataContext>
-        <vm:MenuVM></vm:MenuVM>
+        <vm:MenuViewModel></vm:MenuViewModel>
 
     </UserControl.DataContext>
 
