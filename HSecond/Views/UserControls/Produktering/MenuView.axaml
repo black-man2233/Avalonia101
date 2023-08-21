@@ -1,0 +1,41 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="400"
+             x:Class="HSecond.Views.UserControls.Produktering.MenuView"
+             xmlns:vm="clr-namespace:HSecond.ViewModels.Produktering"
+             x:DataType="vm:MenuVM"
+             Background="#172A46">
+
+    <UserControl.DataContext>
+        <vm:MenuVM></vm:MenuVM>
+
+    </UserControl.DataContext>
+
+
+    <Grid>
+        <ListBox ItemsSource="{Binding MenuList}"
+                 Background="#172A46">
+            <ListBox.ItemTemplate>
+
+                <DataTemplate>
+
+
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+                        <TextBlock Foreground="White" Text="{Binding Varenummer, StringFormat='Id: {0}'}" />
+                        <TextBlock Foreground="White" Text="{Binding Produktnavn}" />
+                        <TextBlock Foreground="White" Text="{Binding Indkøbspris ,StringFormat=' {0} DKK'}" />
+                    </StackPanel>
+
+
+                </DataTemplate>
+
+            </ListBox.ItemTemplate>
+
+        </ListBox>
+
+    </Grid>
+
+</UserControl>
