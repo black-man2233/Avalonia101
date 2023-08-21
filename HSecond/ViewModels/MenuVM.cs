@@ -7,15 +7,29 @@ using ReactiveUI;
 
 namespace HSecond.ViewModels;
 
-public class MenuVM
+public class MenuVM : ViewModelBase
 {
     public MenuVM()
     {
+        _menuList = new();
         ItemClickedCommand = ReactiveCommand.Create<object>(ShowItemInfo);
     }
 
+    #region Properties
 
     public ReactiveCommand<object, Unit> ItemClickedCommand { get; }
+
+    public ObservableCollection<ItemModel> MenuList
+    {
+        get => _menuList;
+        set
+        {
+            _menuList = value;
+            OnPropertyChanged(nameof(MenuList));
+        }
+    }
+
+    #endregion
 
     #region Methods
 
