@@ -7,10 +7,10 @@
              xmlns:vm="clr-namespace:HSecond.ViewModels.Produktering"
              xmlns:view="clr-namespace:HSecond.Views.UserControls.Produktering"
              Background="#0A192F"
-             x:DataType="vm:ProdukteringViewModel">
+             x:DataType="vm:ProdukteringVM">
 
     <UserControl.DataContext>
-        <vm:ProdukteringViewModel />
+        <vm:ProdukteringVM />
     </UserControl.DataContext>
 
     <Grid>

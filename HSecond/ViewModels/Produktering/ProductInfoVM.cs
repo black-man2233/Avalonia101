@@ -2,9 +2,9 @@
 
 namespace HSecond.ViewModels.Produktering;
 
-public class ProductInfoViewModel : ViewModelBase
+public class ProductInfoVM : ViewModelBase
 {
-    public ProductInfoViewModel(ItemModel selectedItem)
+    public ProductInfoVM(ItemModel selectedItem)
     {
         _selectedItem = selectedItem;
     }

@@ -6,10 +6,10 @@ using ReactiveUI;
 
 namespace HSecond.ViewModels.Produktering;
 
-public class ProdukteringViewModel : ViewModelBase
+public class ProdukteringVM : ViewModelBase
 {
     #pragma warning disable
-    public ProdukteringViewModel()
+    public ProdukteringVM()
     {
         _selectedItemInfoView = new ProductInfoView();
         _menuView = new MenuView();
